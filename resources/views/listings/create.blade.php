@@ -5,7 +5,9 @@
     <div class="col-md-8">
         @include('inc.messages')
         <div class="card">
-            <div class="card-header">Create Listing</div>
+            <div class="card-header">Create Listing
+                <a class="btn btn-secondary float-right btn-sm" href="/dashboard">Back</a>
+            </div>
             <div class="card-body">
                 {!! Form::open(['action' => 'ListingsController@store', 'method' => 'POST']) !!}
                 {{ Form::bsText('name', '', ['placeholder' => 'Company Name']) }}
